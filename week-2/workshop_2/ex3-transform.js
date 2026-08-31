@@ -18,9 +18,6 @@ const students = [
     { id: "6506", name: "ชูใจ", major: "IT", score: 84 }
 ];
 
-
-//============================================================================================
-
 function getNames(students) {
     return students.map((s) => s.name);
 }
@@ -57,9 +54,6 @@ function getTopStudent(students) {
     });
 }
 
-
-//============================================================================================
-
 console.log("ชื่อทั้งหมด =", getNames(students));
 
 console.log("คนที่สอบผ่าน =", getPassedStudents(students));
@@ -72,8 +66,6 @@ console.log("จำนวนตามเกรด =", countByGrade(students));
 
 console.log("คะแนนสูงสุด =", getTopStudent(students));
 
-
-// filter -> map -> reduce
 const cePassedAverage = students
     .filter((s) => s.major === "CE" && s.score >= 50)
     .map((s) => s.score)
@@ -83,10 +75,6 @@ const cePassedAverage = students
 
 console.log("คะแนนเฉลี่ย CE ที่สอบผ่าน =", cePassedAverage);
 
-
-//============================================================================================
-
-// ทดสอบ array ว่าง
 console.log("\nทดสอบ array ว่าง");
 
 console.log("getNames([]) =", getNames([]));

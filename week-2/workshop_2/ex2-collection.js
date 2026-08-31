@@ -61,9 +61,6 @@ const students = [
     }
 ];
 
-
-//============================================================================================
-
 function findById(students, id) {
     return students.find((s) => s.id === id);
 }
@@ -82,8 +79,6 @@ function getEmail(students, id) {
 }
 
 
-//============================================================================================
-
 console.log("findById 6501 =", findById(students, "6501"));
 
 console.log("findById 9999 =", findById(students, "9999"));
@@ -96,8 +91,6 @@ console.log("getEmail 6501 =", getEmail(students, "6501"));
 
 console.log("getEmail 9999 =", getEmail(students, "9999"));
 
-
-// เพิ่มนักศึกษาที่ไม่มี contact
 const newStudents = [
     ...students,
     {
